@@ -15,8 +15,3 @@ export const StyledPhoneBook = styled.div`
 
     border-radius: 15px;
 `
-
-// export const StyledForm = styled(Form)`
-// display: flex;
-
-// `
