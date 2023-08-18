@@ -1,6 +1,7 @@
-import { Formik, Field, Form, ErrorMessage} from 'formik';
+import { Formik, Form, ErrorMessage} from 'formik';
 import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
+import { FormBtn, Label, StyledField } from './PhoneBook.styled';
 
 
 
@@ -32,17 +33,17 @@ export const PhoneBook = ({addContact}) => {
       }}
     >
       <Form>
-        <label htmlFor="Name">Name
-        <Field name="Name" placeholder="Name" />
+        <Label htmlFor="Name">Name
+        <StyledField name="Name" placeholder="Name" />
         <ErrorMessage name="Name" component="div" />
-        </label>
+        </Label>
 
-        <label htmlFor="Number">Number
-        <Field name="Number" placeholder="Number" />
+        <Label htmlFor="Number">Number
+        <StyledField name="Number" placeholder="Number" />
         <ErrorMessage name="Number" component="div" />
-        </label>
+        </Label>
         
-        <button type="submit">Add contact</button>
+        <FormBtn type="submit">Add contact</FormBtn>
       </Form>
     </Formik>
   );

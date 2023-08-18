@@ -1,8 +1,9 @@
 import { Component } from 'react';
-import { PhoneBook } from './PhoneBook';
-import { ContactList } from './ContactList';
-import { Filter } from './Filter';
-import { StyledPhoneBook } from './PhoneBook.styled';
+import { PhoneBook } from './PhoneBook/PhoneBook';
+import { ContactList } from './PhoneBook/ContactList';
+import { Filter } from './PhoneBook/Filter';
+import { StyledPhoneBook } from './PhoneBook/PhoneBook.styled';
+import { GlobalStyle } from './GlobalStyle';
 
 export class App extends Component {
   state = {
@@ -73,6 +74,7 @@ export class App extends Component {
             ></ContactList>
           </>
         )}
+        <GlobalStyle />
       </StyledPhoneBook>
     );
   }
