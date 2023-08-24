@@ -51,17 +51,19 @@ export const FormBtn = styled.button`
 `;
 
 export const ContItemEl = styled.li`
-  padding: 8px;
-  width: 100%;
-  border: 1px solid darkgray;
-  border-radius: 5px;
-  margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    align-items: center;
 `;
 
 export const ContactBtn = styled.button`
   width: 100px;
   padding: 8px 16px;
-  margin-right: auto;
   border: 1px solid darkgray;
   color: black;
   border-radius: 5px;
